@@ -8,7 +8,8 @@ struct ContentView: View {
             VStack {
                 Text("RallyRecon")
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                    .font(.system(size:30, weight: .bold))
+                    .font(.system(size:90, weight: .bold))
+                    .padding(30)
             }
         }
     }
