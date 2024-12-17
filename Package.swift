@@ -19,7 +19,7 @@ let package = Package(
             bundleIdentifier: "org.jhhs.425326.RallyRecon",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .coffee),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.mint),
             supportedDeviceFamilies: [
                 .pad,
