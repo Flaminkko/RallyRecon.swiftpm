@@ -12,7 +12,14 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                         .font(.system(size:90, weight: .bold))
                         .padding(30)
+                    NavigationLink("Create A Rally", destination: CreateARally())
+                        .position(x: 410, y: 0)
+                        .font(.system(size:40, weight: .bold))
+                        .foregroundColor(.blue)
                     NavigationLink("Saved Rallies", destination: SavedRallys())
+                        .position(x: 410, y: -150)
+                        .font(.system(size:40, weight: .bold))
+                        .foregroundColor(.blue)
                 }
                 }
             }
