@@ -9,6 +9,6 @@ import SwiftUI
 
 struct CreateARally: View {
     var body: some View {
-        Text("Placeholder")
+        Text("Placeholder!")
     }
 }
