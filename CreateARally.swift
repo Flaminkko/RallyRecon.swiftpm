@@ -10,7 +10,7 @@ import SwiftUI
 struct CreateARally: View {
     var body: some View {
         Text("Placeholder!")
-        NavigationLink("Next", destination: TurnInfoMod())
+        NavigationLink("Start Stage", destination: TurnInfoMod())
             .frame(width: 300, height: 80)
             .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
             .cornerRadius(20)
