@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct CreateARally: View {
+    @State var editRallyName = ""
     var body: some View {
-        Text("Placeholder!")
-        NavigationLink("Next", destination: TurnInfoMod())
+        TextField("Edit Rally Name!", text: $editRallyName)
+            .textFieldStyle(.roundedBorder)
+            .frame(alignment: .center)
+        NavigationLink("Start Stage", destination: TurnInfoMod())
             .frame(width: 300, height: 80)
             .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
             .cornerRadius(20)
