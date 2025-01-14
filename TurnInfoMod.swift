@@ -24,7 +24,6 @@ struct TurnInfoMod : View {
                             .foregroundColor(.white)
                             .font(.system(size:60, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueTurns["left"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 215, y: 450)
                     }
                     Button {
                         isTrueTurns["right"]!.toggle()
@@ -35,7 +34,6 @@ struct TurnInfoMod : View {
                             .foregroundColor(.white)
                             .font(.system(size:60, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueTurns["right"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 185, y: 450)
                     }
                     
                 }
@@ -125,10 +123,9 @@ struct TurnInfoMod : View {
                             .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueTurns[6]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
                     }
                 }
-                .position(x: 410, y: 150)
                 
             }
-            NavigationLink("Next", destination: DurationMod())
+            NavigationLink("Next", destination: CrestsMod())
                 .frame(width: 300, height: 80)
                 .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                 .cornerRadius(20)
