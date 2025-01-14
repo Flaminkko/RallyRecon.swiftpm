@@ -128,7 +128,7 @@ struct TurnInfoMod : View {
                 .position(x: 410, y: 150)
                 
             }
-            NavigationLink("Next", destination: DurationMod())
+            NavigationLink("Next", destination: CrestsMod())
                 .frame(width: 300, height: 80)
                 .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                 .cornerRadius(20)
