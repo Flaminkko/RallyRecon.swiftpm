@@ -29,7 +29,7 @@ struct CrestsMod : View {
                             .font(.system(size:50, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30)
                                 .foregroundColor(isTrueCrests["SmallCrest"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 115, y: 450)
+                            
                     }
                     Button {
                         isTrueCrests["Crest"]!.toggle()
@@ -44,7 +44,6 @@ struct CrestsMod : View {
                             .font(.system(size:50, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30)
                                 .foregroundColor(isTrueCrests["Crest"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 120, y: 450)
                     }
                     Button {
                         isTrueCrests["BigCrest"]!.toggle()
@@ -59,7 +58,6 @@ struct CrestsMod : View {
                             .font(.system(size:50, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30)
                                 .foregroundColor(isTrueCrests["BigCrest"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 150, y: 450)
                     }
                     
                 }
@@ -77,7 +75,6 @@ struct CrestsMod : View {
                         .font(.system(size:50, weight: .bold))
                         .background(RoundedRectangle(cornerRadius: 30)
                         .foregroundColor(isTrueCrests["OnCrest"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 250 , y: 50)
                     }
                     Button {
                         isTrueCrests["LongCrest"]!.toggle()
@@ -92,15 +89,18 @@ struct CrestsMod : View {
                             .font(.system(size:50, weight: .bold))
                             .background(RoundedRectangle(cornerRadius: 30)
                                 .foregroundColor(isTrueCrests["LongCrest"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                            .position(x: 265 , y: 50)
+                            
                     }
+                       
+                }
+                HStack{
                     NavigationLink("Next", destination: CrestsMod())
                         .frame(width: 300, height: 80)
                         .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                         .cornerRadius(20)
-                        .position(x: -145, y: 450)
                         .font(.system(size:40, weight: .bold))
                         .foregroundColor(Color(red: 248 / 255, green: 248 / 255, blue: 238/255))
+                        .padding(60)
                 }
               
             }
