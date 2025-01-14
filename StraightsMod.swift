@@ -8,10 +8,20 @@ import SwiftUI
 
 struct StraightsMod: View {
     var body: some View {
-        Button("50", action: <#T##() -> Void#>)
-        Button("100", action: <#T##() -> Void#>)
-        Button("150", action: <#T##() -> Void#>)
-        Button("200", action: <#T##() -> Void#>)
-        Button("Into", action: <#T##() -> Void#>)
+        Button("50") {
+            
+        }
+        Button("100") {
+            
+        }
+        Button("150") {
+            
+        }
+        Button("200") {
+            
+        }
+        Button("Into") {
+            
+        }
     }
 }

@@ -22,7 +22,6 @@ struct DurationMod : View {
                     .foregroundColor(.white)
                     .font(.system(size:60, weight: .bold))
                     .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["short"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                    .position(x: 215, y: 450)
             }
         }
     }
