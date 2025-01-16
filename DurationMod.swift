@@ -8,20 +8,91 @@
 import SwiftUI
 
 struct DurationMod : View {
-    @State var isTrueDuration = ["short" : false, "long" : false, "very long" : false, "extra long" : false, "extremely long" : false, "late" : false, "tightens" : false, "opens" : false]
+    @State var isTrueDuration = ["short" : false, "long" : false, "very long" : false, "extremely long" : false, "late" : false, "tightens" : false, "opens" : false]
     var body: some View {
-        HStack{
+        VStack{
+            HStack{
+                Button {
+                    isTrueDuration["short"]!.toggle()
+                    isTrueDuration["long"] = false
+                    isTrueDuration["very long"] = false
+                    isTrueDuration["extremely long"] = false
+                } label: {
+                    Text("Short")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["short"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                }
+                Button {
+                    isTrueDuration["long"]!.toggle()
+                    isTrueDuration["short"] = false
+                    isTrueDuration["very long"] = false
+                    isTrueDuration["extremely long"] = false
+                } label: {
+                    Text("Long")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["long"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                }
+                Button {
+                    isTrueDuration["very long"]!.toggle()
+                    isTrueDuration["long"] = false
+                    isTrueDuration["short"] = false
+                    isTrueDuration["extremely long"] = false
+                } label: {
+                    Text("Very\nLong")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["very long"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                }
+                Button {
+                    isTrueDuration["extremely long"]!.toggle()
+                    isTrueDuration["long"] = false
+                    isTrueDuration["very long"] = false
+                    isTrueDuration["short"] = false
+                } label: {
+                    Text("Extremely\nLong")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["extremely long"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                }
+            }
             Button {
-                isTrueDuration["short"]!.toggle()
-                isTrueDuration["long"] = false
-                isTrueDuration["very long"] = false
-                isTrueDuration["extra long"] = false
+                isTrueDuration["late"]!.toggle()
             } label: {
-                Text("Short")
-                    .frame(width: 300, height: 300)
+                Text("Late")
+                    .frame(width: 150, height: 150)
                     .foregroundColor(.white)
-                    .font(.system(size:60, weight: .bold))
-                    .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["short"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                    .font(.system(size:30, weight: .bold))
+                    .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["late"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+            }
+            HStack{
+                Button {
+                    isTrueDuration["tightens"]!.toggle()
+                    isTrueDuration["opens"] = false
+                } label: {
+                    Text("Tightens")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["tightens"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                    
+                }
+                Button {
+                    isTrueDuration["opens"]!.toggle()
+                    isTrueDuration["tightens"] = false
+                } label: {
+                    Text("Opens")
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+                        .font(.system(size:30, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueDuration["opens"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                    
+                }
             }
         }
     }
