@@ -13,7 +13,7 @@ struct AdditionalNotesMod: View {
         
         
         HStack {
-            VStack(alignment: .center , spacing: 30) {
+            VStack(alignment: .center , spacing: 20) {
                 
                 Button {
                     isTrueNotes["/ or U"]!.toggle()
@@ -56,7 +56,7 @@ struct AdditionalNotesMod: View {
                 }
             }
             
-            VStack(alignment: .center , spacing: 30) {
+            VStack(alignment: .center , spacing: 20) {
                 
                 Button {
                     isTrueNotes["past JCT"]!.toggle()
