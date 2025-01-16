@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct AdditionalNotesMod2: View {
-    @State var isTrueNotes = ["SLP": false, "RUF": false, "Stay L": false, "Stay R": false, "Stay Middle": false, "Thru": false, "!": false, "!!": false, "!!!": false]
+    @State var isTrueNotes = ["SLP": false, "RUF": false, "Stay L": false, "Stay R": false, "Thru": false, "!": false, "!!": false, "!!!": false]
     var body: some View {
         
         
         HStack {
-            VStack(alignment: .center , spacing: nil) {
+            VStack(alignment: .center , spacing: 30) {
                 
                 Button {
                     isTrueNotes["SLP"]!.toggle()
@@ -56,18 +56,8 @@ struct AdditionalNotesMod2: View {
                 }
             }
             
-            VStack {
+            VStack(alignment: .center , spacing: 30) {
                 
-                Button {
-                    isTrueNotes["Stay Middle"]!.toggle()
-                } label: {
-                    Text("Stay Middle")
-                        .frame(width: 300, height: 300)
-                        .foregroundColor(.white)
-                        .font(.system(size:60, weight: .bold))
-                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["Stay Middle"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                    
-                }
                 Button {
                     isTrueNotes["Thru"]!.toggle()
                 } label: {
@@ -97,23 +87,23 @@ struct AdditionalNotesMod2: View {
                         .foregroundColor(.white)
                         .font(.system(size:60, weight: .bold))
                         .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["!!"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                    
-                    Button {
-                        isTrueNotes["!!!"]!.toggle()
-                    } label: {
-                        Text("!!!")
-                            .frame(width: 300, height: 300)
-                            .foregroundColor(.white)
-                            .font(.system(size:60, weight: .bold))
-                            .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["!!!"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-                        
-                    }
+                }
+                
+                Button {
+                    isTrueNotes["!!!"]!.toggle()
+                } label: {
+                    Text("!!!")
+                        .frame(width: 300, height: 300)
+                        .foregroundColor(.white)
+                        .font(.system(size:60, weight: .bold))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["!!!"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
                     
                 }
             }
         }
     }
 }
+
 #Preview {
     AdditionalNotesMod2()
 }
