@@ -1,31 +1,36 @@
 //
-//  SavingStageAfterInfoEntered.swift
+//  CreateARally.swift
 //  RallyRecon
 //
-//  Created by Ananya A. Maru on 1/16/25.
+//  Created by Ananya Maru on 1/16/25.
 //
+import SwiftUI
 
-//import SwiftUI
-//
-//struct Additional: View {
-//    @State var isTrueNotes = ["/ or U": false, "?": false, "][": false, "JCT": false, "past JCT": false, "D.C.": false, "NAR": false]
-//    var body: some View {
-//        
-//        
-//        HStack {
-//            VStack(alignment: .center , spacing: 30) {
-//                
-//                Button {
-//                    isTrueNotes["/ or U"]!.toggle()
-//                } label: {
-//                    Text("/ or U")
-//                        .frame(width: 300, height: 300)
-//                        .foregroundColor(.white)
-//                        .font(.system(size:60, weight: .bold))
-//                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["/ or U"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
-//                    
-//                }
-//                //                Button {
-//            }
-//        }
-//        
+struct SavingStageAfterInfoEntered: View {
+    var body: some View {
+        NavigationStack{
+            ZStack{
+                Color(red: 248 / 255, green: 248 / 255, blue: 238/255)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .ignoresSafeArea()
+                VStack{
+                    Image("AppLogo")
+                        .resizable()
+                        .frame(width: 450.0, height: 450.0)
+                    
+                    NavigationLink("Save Final Track", destination: ContentView())
+                        .frame(width: 400, height: 90)
+                        .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
+                        .cornerRadius(20)
+                        .font(.system(size:40, weight: .bold))
+                        .foregroundColor(Color(red: 248 / 255, green: 248 / 255, blue: 238/255))
+                }
+                
+            }
+        }
+    }
+}
+
+#Preview {
+    SavingStageAfterInfoEntered()
+}
