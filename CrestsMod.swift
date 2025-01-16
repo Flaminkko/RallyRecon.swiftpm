@@ -15,6 +15,10 @@ struct CrestsMod : View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea()
             VStack{
+                Text("Crests")
+                    .font(.system(size:90, weight: .bold))
+                    .padding(30)
+                    .foregroundColor(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                 HStack{
                     Button {
                         isTrueCrests["SmallCrest"]!.toggle()
