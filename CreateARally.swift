@@ -31,3 +31,6 @@ struct CreateARally: View {
        
     }
 }
+#Preview {
+    CreateARally()
+}

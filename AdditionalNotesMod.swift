@@ -96,7 +96,7 @@ struct AdditionalNotesMod: View {
                         .frame(width: 300, height: 300)
                         .foregroundColor(.white)
                         .font(.system(size:60, weight: .bold))
-                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["O.C"]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
+                        .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["O.C."]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
                 }
             }
         }

@@ -9,7 +9,7 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 VStack{
                     Text("RallyRecon")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                        .frame(width: 1000, height: 100, alignment: .top)
                         .font(.system(size:90, weight: .bold))
                         .padding(30)
                         .foregroundColor(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
@@ -21,16 +21,15 @@ struct ContentView: View {
                         .frame(width: 300, height: 80)
                         .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                         .cornerRadius(20)
-                        .position(x: 410, y: 170)
                         .font(.system(size:40, weight: .bold))
                         .foregroundColor(Color(red: 248 / 255, green: 248 / 255, blue: 238/255))
                     NavigationLink("Saved Rallies", destination: SavedRallys())
                         .frame(width: 300, height: 80)
                         .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                         .cornerRadius(20)
-                        .position(x: 410, y: 80)
                         .font(.system(size:40, weight: .bold))
                         .foregroundColor(Color(red: 248 / 255, green: 248 / 255, blue: 238/255))
+                        .padding(10)
                         
                         
                 }
