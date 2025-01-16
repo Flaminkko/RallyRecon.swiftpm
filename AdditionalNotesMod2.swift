@@ -113,9 +113,7 @@ struct AdditionalNotesMod2: View {
             }
         }
     }
-    
-    
-    #Preview {
-        AdditionalNotesMod2()
-    }
+}
+#Preview {
+    AdditionalNotesMod2()
 }
