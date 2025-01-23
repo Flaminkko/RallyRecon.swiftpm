@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct AdditionalNotesMod: View {
-    @State var isTrueNotes = ["/ or U": false, "?": false, "][": false, "JCT": false, "past JCT": false, "D.C.": false, "NAR": false]
+    @State var isTrueNotes = ["/ or U": false, "?": false, "][": false, "JCT": false, "past JCT": false, "D.C.": false, "NAR": false, "O.C.": false]
     var body: some View {
         
         
         HStack {
-            VStack(alignment: .center , spacing: 30) {
-            
+            VStack(alignment: .center , spacing: 20) {
+                
                 Button {
                     isTrueNotes["/ or U"]!.toggle()
                 } label: {
@@ -56,7 +56,7 @@ struct AdditionalNotesMod: View {
                 }
             }
             
-            VStack(alignment: .center , spacing: 30) {
+            VStack(alignment: .center , spacing: 20) {
                 
                 Button {
                     isTrueNotes["past JCT"]!.toggle()
@@ -98,7 +98,6 @@ struct AdditionalNotesMod: View {
                         .font(.system(size:60, weight: .bold))
                         .background(RoundedRectangle(cornerRadius: 30).foregroundColor(isTrueNotes["O.C."]! ? .blue : Color(red: 17 / 255, green: 51 / 255, blue: 95/255)))
                 }
-                
             }
         }
     }
