@@ -100,10 +100,15 @@ struct AdditionalNotesMod: View {
                 }
             }
         }
+        NavigationLink("More Modifiers", destination: AdditionalNotesMod2())
+            .frame(width: 300, height: 90)
+            .foregroundColor(.white)
+            .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
+            .cornerRadius(20)
+            .font(.system(size:40, weight: .bold))
     }
+    
 }
-
-
 #Preview {
     AdditionalNotesMod()
 }
