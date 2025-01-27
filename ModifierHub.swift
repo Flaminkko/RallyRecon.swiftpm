@@ -21,7 +21,7 @@ struct ModifierHub : View {
                     Spacer()
                         .frame(height:10)
                     
-                    Text("Add Modifiers")
+                    Text("Modifier Hub")
                         .frame(width: 1000, height: 100, alignment: .top)
                         .font(.system(size:90, weight: .bold))
                         .padding(.bottom, 150)
