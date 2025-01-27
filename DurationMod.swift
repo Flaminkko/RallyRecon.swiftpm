@@ -102,7 +102,7 @@ struct DurationMod : View {
                         
                     }
                 }
-                NavigationLink("Next", destination: DurationMod())
+                NavigationLink("Next", destination: CrestsMod())
                     .frame(width: 300, height: 80)
                     .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
                     .cornerRadius(20)
