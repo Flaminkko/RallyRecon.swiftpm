@@ -16,7 +16,7 @@ struct ContentView: View {
                     Image("AppLogo")
                         .resizable()
                         .frame(width: 450.0, height: 450.0)
-                
+                    
                     NavigationLink("Create A Rally", destination: CreateARally())
                         .frame(width: 300, height: 80)
                         .background(Color(red: 17 / 255, green: 51 / 255, blue: 95/255))
@@ -30,10 +30,10 @@ struct ContentView: View {
                         .font(.system(size:40, weight: .bold))
                         .foregroundColor(Color(red: 248 / 255, green: 248 / 255, blue: 238/255))
                         .padding(10)
-                        
-                        
-                }
+                    
+                    
                 }
             }
         }
     }
+}
